@@ -1,0 +1,512 @@
+times<- replicate(play(),1000)
+qplot(times,binwidth=1)
+}
+plot()
+plot <- function(){
+times<- replicate(play(),1000)
+qplot(times)
+}
+plot()
+plot <- function(){
+times<- replicate(play(),1000)
+qplot(times,binwidth=.5)
+}
+plot()
+plot()
+plot()
+get_symbols <- function() {
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
+sample(wheel, size = 3, replace = TRUE,
+#prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
+}
+get_symbols <- function() {
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
+sample(wheel, size = 3, replace = TRUE),
+prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
+}
+get_symbols <- function() {
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0"),
+sample(wheel, size = 3, replace = TRUE),
+prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
+}
+get_symbols <- function() {
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
+sample(wheel, size = 3, replace = TRUE,
+prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
+}
+plot <- function(){
+times<- replicate(1000,play())
+qplot(times,binwidth)
+}
+plot()
+plot <- function(){
+times<- replicate(1000,play())
+qplot(times,binwidth=1)
+}
+plot()
+plot()
+plot()
+plot()
+plot()
+plot()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+library(ggplot2)
+play <- function (){
+symbols <-  get_symbols()
+print(symbols)
+score(symbols)
+}
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+play()
+score <- function(symbols){
+payouts <- c("DD" = 100, "7" = 80, "BBB" = 40, "BB" = 25,
+"B" = 10, "C" = 10, "0" = 0)
+same <- symbols[1]==symbols[2]&symbols[1]==symbols[3]
+nc <- c(0,2,5)
+if (same) {
+prize <- unname(payouts[symbols[1]])}
+else if ( symbols %in% c("B","BB","BBB") ) {
+prize <- 5
+}
+else {
+count <- sum(symbols=="C")
+prize <- c(0,2,5)[count+1]
+}
+diamonds = sum(symbols=="DD")
+prize*2^diamonds
+}
+get_symbols <- function() {
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
+sample(wheel, size = 3, replace = TRUE,
+prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
+}
+play <- function (){
+symbols <-  get_symbols()
+print(symbols)
+score(symbols)
+}
+play()
+attr(symbols)
+attr(prize,"symbols")
+symbols<-attr(prize,"symbols")
+attr(symbols)
+attributes(prize)
+attributes(symbols)
+symbols
+attributes(score$symbols)
+attributes(score)
+score <- function(symbols){
+payouts <- c("DD" = 100, "7" = 80, "BBB" = 40, "BB" = 25,
+"B" = 10, "C" = 10, "0" = 0)
+same <- symbols[1]==symbols[2]&symbols[1]==symbols[3]
+nc <- c(0,2,5)
+if (same) {
+prize <- unname(payouts[symbols[1]])}
+else if ( symbols %in% c("B","BB","BBB") ) {
+prize <- 5
+}
+else {
+count <- sum(symbols=="C")
+prize <- c(0,2,5)[count+1]
+}
+diamonds = sum(symbols=="DD")
+prize*2^diamonds
+slot_display(prize)
+# Display
+slot_display <- function(prize){
+# extract symbols
+symbols <- attr(prize, "symbols")
+# collapse symbols into single string
+symbols <- paste(symbols, collapse = " ")
+# combine symbol with prize as a regular expression
+# \n is regular expression for new line (i.e. return or enter)
+string <- paste(symbols, prize, sep = "\n$")
+# display regular expression in console without quotes
+cat(string)
+}
+}
+get_symbols <- function() {
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
+sample(wheel, size = 3, replace = TRUE,
+prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
+}
+play <- function (){
+symbols <-  get_symbols()
+print(symbols)
+score(symbols)
+}
+play()
+score <- function(symbols){
+payouts <- c("DD" = 100, "7" = 80, "BBB" = 40, "BB" = 25,
+"B" = 10, "C" = 10, "0" = 0)
+same <- symbols[1]==symbols[2]&symbols[1]==symbols[3]
+nc <- c(0,2,5)
+if (same) {
+prize <- unname(payouts[symbols[1]])}
+else if ( symbols %in% c("B","BB","BBB") ) {
+prize <- 5
+}
+else {
+count <- sum(symbols=="C")
+prize <- c(0,2,5)[count+1]
+}
+diamonds = sum(symbols=="DD")
+prize*2^diamonds
+}
+get_symbols <- function() {
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
+sample(wheel, size = 3, replace = TRUE,
+prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
+}
+slot_display <- function(prize){
+# extract symbols
+symbols <- attr(prize, "symbols")
+# collapse symbols into single string
+symbols <- paste(symbols, collapse = " ")
+# combine symbol with prize as a regular expression
+# \n is regular expression for new line (i.e. return or enter)
+string <- paste(symbols, prize, sep = "\n$")
+# display regular expression in console without quotes
+cat(string)
+}
+play <- function (){
+symbols <-  get_symbols()
+slot_display(prize)
+score(symbols)
+}
+play()
+score <- function(symbols){
+payouts <- c("DD" = 100, "7" = 80, "BBB" = 40, "BB" = 25,
+"B" = 10, "C" = 10, "0" = 0)
+same <- symbols[1]==symbols[2]&symbols[1]==symbols[3]
+nc <- c(0,2,5)
+if (same) {
+prize <- unname(payouts[symbols[1]])}
+else if ( symbols %in% c("B","BB","BBB") ) {
+prize <- 5
+}
+else {
+count <- sum(symbols=="C")
+prize <- c(0,2,5)[count+1]
+}
+diamonds = sum(symbols=="DD")
+prize*2^diamonds
+}
+get_symbols <- function() {
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
+sample(wheel, size = 3, replace = TRUE,
+prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
+}
+slot_display <- function(prize){
+# extract symbols
+symbols <- attr(prize, "symbols")
+# collapse symbols into single string
+symbols <- paste(symbols, collapse = " ")
+# combine symbol with prize as a regular expression
+# \n is regular expression for new line (i.e. return or enter)
+string <- paste(symbols, prize, sep = "\n$")
+# display regular expression in console without quotes
+cat(string)
+}
+play <- function (){
+symbols <-  get_symbols()
+slot_display(prize)
+#score(symbols)
+}
+play()
+prize
+prize
+prize
+prize
+prize
+play()
+play()
+play()
+play()
+library(ggplot2)
+play()
+system.time(abs(long))
+install.packages('igraph')
+library(igraph)
+numNodes<- 5
+edges <- c(1,2,3,2,2,4)
+g<- graph(edgs,n=numNodes,directed=TRUE)
+g<- graph(edges,n=numNodes,directed=TRUE)
+print(g)
+t<-graph.tree(100,2)
+erg<-erdos.renyi.game(100,0.5)
+erg2<-erdos.renyi.game(100,0:200)
+d<-barabasi.game(100,2)
+e<-induced_subgraph(erg,1:10)
+summary(e)
+degree(g)
+diameter(g)
+is_connected(g)
+is_dag(g)
+components(g,'strong')$no
+degree(g,mode='in')
+degree(g,mode='out')
+betweenness(g)
+evcent(g)$vector
+page_rank(g)$vector
+plot(g)
+plot(g)
+g<- graph(edges,n=numNodes,directed=TRUE)
+plot(g)
+plot(g,layout=layout_randomly)
+plot(g,layout=layout_randomly)
+plot(g,layout=layout_on_grid)
+plot(degree.distribution(g))
+g <- graph(edges,n=numNodes,directed=TRUE)
+print(g)
+plot(g)
+plot('g')
+plot(t)
+d<-c(1,2,1,1,2,2,1)
+plot(d)
+mtcars
+data<-mtcars
+plot(data)
+data<- mtcars
+summary(data)
+plot(data$mpg)
+plot(data$mtcars)
+data<- mtcars
+summary(data)
+plot(data$mpg)
+pairs(data$mtcars)
+pairs(data)
+plot(data$mpg)
+plot(data)
+get(env)
+ls(env)
+environment()
+ls(environment())
+parent.env()
+parent.env(env)
+show_env()
+environment()
+environment(show_env)
+globalenv()
+parenvs()
+library(devtools)
+install.packages(devtools)
+install.packages('devtools')
+install.packages("devtools")
+library(devtools)
+library(devtools)
+install.packages("devtools")
+library(devtools)
+parenvs(all=TRUE)
+parent.env()
+parenvs(all=TRUE)
+library(devtools)
+parenvs(all=TRUE)
+parenvs(all=TRUE)
+install.packages("devtools")
+install.packages("devtools")
+library(devtools)
+parenvs(all=TRUE)
+install.packages('pryr')
+parenvs(all=TRUE)
+library(pryr)
+parenvs(all=TRUE)
+install.packages('graphics')
+shiny::runApp('E:/projects/cougcardproj/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/sample app')
+shiny::runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+runApp('E:/projects/cougcardproj - workbook/dashboard_n')
+setwd("E:/projects/ns project/power (2)/datasets_1")
+g1<-read.graph("new_power.gml",format = c("gml"))
+library(igraph)
+g1<-read.graph("new_power.gml",format = c("gml"))
+max(degree(V(g1)$name))
+x<-max(degree(g1))
+x
+g1<-read.graph("new_power.gml",format = c("gml"))
+x<-max(degree(g1))
+x
+g1<-read.graph("power.gml",format = c("gml"))
+x<-max(degree(g1))
+x
+V(g1)$name <- 1:vcount(g1)
+x
+x$name
+V(x)$name
+V(g1)$name[degree(g1)==max(degree(g1))]
+g1<-read.graph("new_power.gml",format = c("gml"))
+V(g1)$name[degree(g1)==max(degree(g1))]
+degree(V(g1)$name==2553)
+V(g1)$name[degree(g1)==max(degree(g1))-1]
+V(g1)$name[degree(g1)==max(degree(g1))-2]
+V(g1)$name[degree(g1)==max(degree(g1))-3]
+V(g1)$name[degree(g1)==max(degree(g1))-4]
+V(g1)$name[degree(g1)==max(degree(g1))-5]
+V(g1)$name[degree(g1)==max(degree(g1))-6]
+V(g1)$name[degree(g1)==max(degree(g1))-7]
+V(g1)$name[degree(g1)==max(degree(g1))-8]
+degree(g1)
+x<-degree(g1)
+x<-degree(g1)
+table(x)
+g1<-read.graph("new_power.gml",format = c("gml"))
+x<-degree(g1)
+table(x)
+g1<-read.graph("power.gml",format = c("gml"))
+x<-degree(g1)
+x_f<-as.factor(x)
+table(x_f)
+y<-induced.subgraph(g1,V(g1)[betweenness(g1)!=max(betweenness(g1))]
+y<-induced.subgraph(g1,V(g1)[betweenness(g1)!=max(betweenness(g1))])
+a<-betweenness(g1)
+a1<-sort(a,decreasing = T)
+x_f<-as.factor(a)
+table(x_f)
+max(betweenness(g1)-10)
+y1<-y<-induced.subgraph(g1,V(g1)[head(a1,10)])
+a2<-head(a1,10)
+y1<-y<-induced.subgraph(g1,V(g1)[a2])
+a2
+y1<-y<-induced.subgraph(g1,V(g1)[V(g1)==a2])
+y1<-y<-induced.subgraph(g1,V(g1)==a2)
+s_bet<-sort(bet, decreasing = F)
+bet<-betweenness(m)
+a<-betweenness(g1)
+a1<-sort(a,decreasing = T)
+a2<-head(a1,10)
+a3<-betweenness(g1)==a2
+a3
+table(a3)
+a3<-a2%in%betweenness(g1)
+table(a3)
+y1<-induced.subgraph(g1,V(g1)[a3])
+summary(y1)
+a
+aa3
+a3
+a3<-a2==betweenness(g1)
+a3
+table(a3)
+a3<-V(g1)[a2==betweenness(g1)]
+a3
+a<-betweenness(g1)-1
+d<-betweenness(g1)
+length(a)
+length(d)
+a
+d<-betweenness(g1)
+x_f<-as.factor(d)
+table(x_f)
+g1<-read.graph("new_power.gml",format = c("gml"))
+d<-betweenness(g1)
+x_f<-as.factor(d)
+table(x_f)
+a1<-sort(d,decreasing = T)
+a2<-head(a1,10)
+a3<-V(g1)$names[a2==betweenness(g1)]
+a3
+d<-max(betweenness(g1))
+d
+d<-max(betweenness(g1))+1
+d
+a<-betweenness(g1,10)
+a
+a<-betweenness(g1,11)
+a
+d<-max(betweenness(g1))
+d<-betweenness(g1)
+x1<-sort(d,decreasing= T)
+x_f<-as.factor(x1)
+table(x_f)
+x1<-sort(d,decreasing= T)
+head(x1,19)
+head(x1,1)
+head(x1,10)
+y<-induced.subgraph(g1,V(g1)[betweenness(g1)!=2253852 ])
+summary(y)
+summary(g1)
+g1<-read.graph("power.gml",format = c("gml"))
+d<-betweenness(g1)
+a1<-sort(d,decreasing = T)
+V(g1)$name <- 1:vcount(g1)
+a2<-head(x1,10)
+a2
+y<-induced.subgraph(g1,V(g1)[betweenness(g1)!=2253852 ])
+summary(y)
+y<-induced.subgraph(g1,V(g1)[V(g1)$name!=387 ])
+summary(y)
+d<-max(betweenness(y))
+d
+write.graph(y,"betweenness_minus_highest.gml",format = c("gml"))
+y<-induced.subgraph(g1,V(g1)[V(g1)$name!=c(387,1244,2406,2308,2331,2223,2313,2365,2236) ])
+summary(y)
+y<-induced.subgraph(g1,V(g1)[V(g1)$name!=387&V(g1)$name!=1244&V(g1)$name!=2406&V(g1)$name!=2308&V(g1)$name!=2331&V(g1)$name!=2223&V(g1)$name!=2313&V(g1)$name!=2365&V(g1)$name!=2236 ])
+summary(y)
+y<-induced.subgraph(g1,V(g1)[V(g1)$name!=387&V(g1)$name!=1244&V(g1)$name!=2406&V(g1)$name!=2308&V(g1)$name!=2331&V(g1)$name!=2223&V(g1)$name!=2222&V(g1)$name!=2313&V(g1)$name!=2365&V(g1)$name!=2236 ])
+summary(y)
+write.graph(y,"betweenness_minus_highest_10.gml",format = c("gml"))
+plot(g1)
+setwd("E:/projects/cougcardproj - workbook/dashboard_n")
+install.packages("devtools")
+install.packages("shinyapps")
+devtools::install_github('rstudio/shinyapps')
+library(devtools)
+devtools::install_github('rstudio/shinyapps')
+install.packages("digest")
+install.packages("shinyapps")
+devtools::install_github('rstudio/shinyapps')
+install.packages('rsconnect')
+install.packages("rsconnect")
+rsconnect::setAccountInfo(name='cougcard', token='0EB7B2B92FECE577F95875F5906DFCAB', secret='6EnbRVjLVmH7lrM6TpLFoz9LARxAlSZzIGQGrWOv')
+library(rsconnect)
+rsconnect::setAccountInfo(name='cougcard', token='0EB7B2B92FECE577F95875F5906DFCAB', secret='6EnbRVjLVmH7lrM6TpLFoz9LARxAlSZzIGQGrWOv')
+rsconnect::setAccountInfo(name='cougcard', token='0EB7B2B92FECE577F95875F5906DFCAB', secret='6EnbRVjLVmH7lrM6TpLFoz9LARxAlSZzIGQGrWOv')
+library(devtools)
+rsconnect::setAccountInfo(name='cougcard', token='0EB7B2B92FECE577F95875F5906DFCAB', secret='6EnbRVjLVmH7lrM6TpLFoz9LARxAlSZzIGQGrWOv')
+library(digest)
+install.packages("digest")
+library(digest)
+library("devtools", lib.loc="~/R/win-library/3.2")
+rsconnect::setAccountInfo(name='cougcard', token='0EB7B2B92FECE577F95875F5906DFCAB', secret='6EnbRVjLVmH7lrM6TpLFoz9LARxAlSZzIGQGrWOv')
+library(rsconnect)
+rsconnect::setAccountInfo(name='cougcard', token='0EB7B2B92FECE577F95875F5906DFCAB', secret='6EnbRVjLVmH7lrM6TpLFoz9LARxAlSZzIGQGrWOv')
+rsconnect::setAccountInfo(name='cougcard', token='0EB7B2B92FECE577F95875F5906DFCAB', secret='6EnbRVjLVmH7lrM6TpLFoz9LARxAlSZzIGQGrWOv')
