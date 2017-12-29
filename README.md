@@ -3,6 +3,7 @@
 										IRLL LAB, Washington State University, 
 										Pullman, WA, USA - 99163
 */
+/* Linked in Profile: https://www.linkedin.com/in/viresh-duvvuri-64684859/ */
 
 
 	1.) codesWritten_for_researchProjects : Contains all the codes of my reseach projects at Intelligent Robotics Learning Laboratory (IRL LAB)
